@@ -1,0 +1,52 @@
+{
+  "name": "react-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --host 0.0.0.0 --progress --inline --hot",
+    "build": "set NODE_ENV=production & webpack -p --progress --inline --config webpack.production.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-plugin-react-transform": "*",
+    "css-loader": "*",
+    "extract-text-webpack-plugin": "*",
+    "less": "*",
+    "less-loader": "*",
+    "postcss": "*",
+    "postcss-loader": "*",
+    "react-hot-loader": "*",
+    "react-transform-hmr": "*",
+    "style-loader": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  },
+  "dependencies": {
+    "asyncstorage": "*",
+    "babel-polyfill": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-2": "*",
+    "babel-register": "*",
+    "classnames": "*",
+    "compression": "*",
+    "express": "*",
+    "forever": "*",
+    "react": "*",
+    "react-dom": "*",
+    "superagent": "*"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2",
+      "react"
+    ]
+  }
+}
