@@ -35,6 +35,7 @@ module.exports = {
   devtool: 'eval',
   devServer: {
     stats: 'warnings-only',
+    historyApiFallback: true
   }
 };
 
