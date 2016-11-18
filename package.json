@@ -21,7 +21,7 @@
     "less-loader": "*",
     "postcss": "*",
     "postcss-loader": "*",
-    "react-hot-loader": "*",
+    "react-hot-loader": "^3.0.0-beta.6",
     "react-transform-hmr": "*",
     "style-loader": "*",
     "webpack": "*",
@@ -51,6 +51,7 @@
       "es2015",
       "stage-2",
       "react"
-    ]
+    ],
+    "plugins": ["react-hot-loader/babel"]
   }
 }
