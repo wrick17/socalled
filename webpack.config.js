@@ -19,7 +19,7 @@ module.exports = {
       {
         test: /\.jsx$/,
         exclude: /(node_modules|bower_components)/,
-        loaders: ['react-hot', 'babel-loader']
+        loaders: ['babel-loader']
       },
       {
         test: /\.less$/,
@@ -35,6 +35,7 @@ module.exports = {
   devtool: 'eval',
   devServer: {
     stats: 'warnings-only',
+    historyApiFallback: true
   }
 };
 
