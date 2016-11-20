@@ -1,4 +1,4 @@
-var style = require("./app.less");
+require("./app.less");
 
 import React  from 'react'
 import { createStore, combineReducers } from 'redux'

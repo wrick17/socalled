@@ -8,10 +8,10 @@
 body {
   margin: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: #999;
+}
+
+#app {
+  width: 100%;
 }
 
 ul {
@@ -30,4 +30,23 @@ h1 {
   margin: auto;
   display: inline-block;
   padding: 20px;
+}
+
+.more {
+  background: #1277BB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 20px;
+  color: white;
+  letter-spacing: 8px;
+  font-size: 30px;
+  text-transform: lowercase;
+  font-weight: bold;
+
+  @media(max-width: @mobile) {
+    & {
+      padding: 40px 20px;
+    }
+  }
 }
