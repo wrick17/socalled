@@ -10,7 +10,7 @@ export default class PacMan extends React.Component {
   render() {
     const bullets = [];
     for (var i = 0; i < 20; i++) {
-      bullets.push(<span className="bullet"></span>);
+      bullets.push(<span className="bullet" key={i}></span>);
     }
     return (
       <div className="pac-wrapper">

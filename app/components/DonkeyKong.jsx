@@ -10,7 +10,7 @@ export default class DonkeyKong extends React.Component {
   render() {
     const barrels = [];
     for (var i = 0; i < 20; i++) {
-      barrels.push(<img className="barrel" src="/images/dbarrel.png" />);
+      barrels.push(<img className="barrel" key={i} src="/images/dbarrel.png" />);
     }
     return (
       <div className="kong-wrapper">
@@ -22,7 +22,7 @@ export default class DonkeyKong extends React.Component {
           <img className="kong-img" src="/images/donkeyKong.jpg" />
           {barrels}
         </div>
-        <img className="ramp" src="/images/ramp.png" />
+        <div className="ramp"></div>
       </div>
     );
   }

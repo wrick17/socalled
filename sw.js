@@ -7,7 +7,12 @@ self.addEventListener("install", function(event) {
       return cache.addAll([
         '/',
         '/dist/style.css',
-        '/dist/bundle.js'
+        '/dist/bundle.js',
+        '/images/minion.jpg',
+        '/images/donkeyKong.jpg',
+        '/images/pacman2.png',
+        '/images/dbarrel.png',
+        '/images/ramp.png'
       ]);
     })
   );
@@ -19,7 +24,7 @@ self.addEventListener("fetch", function(event) {
   if (requestURL.hostname === "fonts.gstatic.com" || requestURL.hostname === "fonts.googleapis.com") {
     event.respondWith(returnFromCacheOrFetch(event.request, fontCache));
   } else if (/^\/images.*\.(jpg|png)$/.test(requestURL.pathname)) {
-    event.respondWith(returnWebpOrOriginal(event.request));
+    event.respondWith(returnFromCacheOrFetch(event.request, mainCache));
   } else {
     event.respondWith(returnFromCacheOrFetch(event.request, mainCache));
   }

@@ -81,12 +81,15 @@
   }
 
   .ramp {
+    background: url(/images/ramp.png);
+    height: 30px;
     width: 100%;
+    background-repeat-y: no-repeat;
+    background-size: contain;
     margin-top: -8px;
 
     @media(max-width: @mobile) {
       & {
-        min-width: 800px;
         margin-top: -19px;
       }
     }
